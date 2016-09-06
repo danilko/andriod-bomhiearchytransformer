@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_main"
+    tools:context="com.csvconverter.csvconverter.MainActivity">
+
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/etxtBomInput"
+        android:text="fatherbom.csv"
+        android:layout_below="@+id/txtInputBOMSourceFileLabel"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/txtInputBOMSourceFileLabel"
+        android:layout_alignEnd="@+id/txtInputBOMSourceFileLabel" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/etxtLevelRowHeader"
+        android:text="Level"
+        android:layout_below="@+id/txtLavelRowHeaderLabel"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/txtLavelRowHeaderLabel"
+        android:layout_alignEnd="@+id/txtLavelRowHeaderLabel" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/etxtFatherNumberRowHeader"
+        android:text="Father Number"
+        android:layout_below="@+id/txtFatherNumberRowHeaderLabel"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/etxtItemNumberRowHeader"
+        android:layout_alignEnd="@+id/etxtItemNumberRowHeader" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/etxtItemNumberRowHeader"
+        android:text="Item Number"
+        android:layout_below="@+id/txtItemNumberRowHeaderLabel"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/txtItemNumberRowHeaderLabel"
+        android:layout_alignEnd="@+id/txtItemNumberRowHeaderLabel" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Input Bom File:"
+        android:id="@+id/txtInputBOMSourceFileLabel"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:labelFor="@+id/etxtBomInput" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Level Column Name:"
+        android:id="@+id/txtLavelRowHeaderLabel"
+        android:labelFor="@+id/etxtLevelRowHeader"
+        android:layout_below="@+id/etxtBomInput"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="31dp"
+        android:layout_alignRight="@+id/etxtBomInput"
+        android:layout_alignEnd="@+id/etxtBomInput" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Item Number Column Name:"
+        android:id="@+id/txtItemNumberRowHeaderLabel"
+        android:labelFor="@+id/etxtItemNumberRowHeader"
+        android:layout_below="@+id/etxtLevelRowHeader"
+        android:layout_marginTop="31dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/etxtLevelRowHeader"
+        android:layout_alignEnd="@+id/etxtLevelRowHeader" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Father Number Column Name:"
+        android:id="@+id/txtFatherNumberRowHeaderLabel"
+        android:labelFor="@+id/etxtFatherNumberRowHeader"
+        android:layout_below="@+id/etxtItemNumberRowHeader"
+        android:layout_marginTop="34dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Converting"
+        android:id="@+id/btnStartConverting"
+        android:layout_below="@+id/etxtFatherNumberRowHeader"
+        android:layout_alignRight="@+id/etxtFatherNumberRowHeader"
+        android:layout_alignEnd="@+id/etxtFatherNumberRowHeader"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status:"
+        android:layout_below="@+id/btnStartConverting"
+        android:id="@+id/txtStatusLabel"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:labelFor="@+id/txtStatus"
+        android:textColor="#000000" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtStatus"
+        android:layout_below="@+id/txtStatusLabel"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+
+       />
+
+</RelativeLayout>
